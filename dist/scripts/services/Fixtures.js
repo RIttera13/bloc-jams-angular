@@ -9,11 +9,11 @@
                 year: '2003',
                 albumArtUrl: '/assets/images/album_covers/Tuxicitycheese.jpg',
                 songs: [
-                    { title: '(You Drive Me) Crazy', duration: '161.71', audioUrl: '/assets/music/(You Drive Me) Crazy' },
-                    { title: 'Baby Got Back', duration: '103.96', audioUrl: '/assets/music/Baby Got Back' },
-                    { title: 'One Step Closer', duration: '268.45', audioUrl: '/assets/music/One Step Closer' },
-                    { title: 'Down With The Sickness', duration: '153.14', audioUrl: '/assets/music/Down With The Sickness' },
-                    { title: 'Relax', duration: '374.22', audioUrl: '/assets/music/Relax' }
+                    { title: '(You Drive Me) Crazy', duration: '108.83', audioUrl: '/assets/music/(You Drive Me) Crazy' },
+                    { title: 'Baby Got Back', duration: '164.91', audioUrl: '/assets/music/Baby Got Back' },
+                    { title: 'One Step Closer', duration: '96.5', audioUrl: '/assets/music/One Step Closer' },
+                    { title: 'Down With The Sickness', duration: '139.21', audioUrl: '/assets/music/Down With The Sickness' },
+                    { title: 'Relax', duration: '114', audioUrl: '/assets/music/Relax' }
                 ]
             };
          

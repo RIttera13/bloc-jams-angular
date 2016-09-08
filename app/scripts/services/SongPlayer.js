@@ -144,7 +144,13 @@
                 currentBuzzObject.setTime(time);
             }
           };
-     
+        
+          SongPlayer.volume = 30;
+              
+          SongPlayer.setCurrentVolume = function(volume) {
+              currentBuzzObject.setVolume(volume)
+          };
+        
       return SongPlayer;
     };
  
