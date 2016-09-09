@@ -43,7 +43,7 @@
                 };
                 
                 scope.thumbStyle = function() {
-                    return ({left:percentString(), backgroundColor: "white"});
+                    return {left:percentString()};
                 };
                 
                 scope.onClickSeekBar = function(event) {

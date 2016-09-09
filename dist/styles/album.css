@@ -11,7 +11,7 @@
     padding: 1rem;
 }
 
-album-view-details .album-view-title {
+.album-view-details .album-view-title {
     font-weight:  300;
     font-size: 2rem;
 }
@@ -36,7 +36,16 @@ album-view-details .album-view-title {
 
 .album-view-song-item {
     height: 3rem;
+    width: 66px;
     border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.album-view-song-item span {
+    padding-left: 1px;
+}
+
+.album-view-song-item .number-position {
+    padding-left: 8px;
 }
 
 .song-item-number {
@@ -74,7 +83,6 @@ album-view-details .album-view-title {
 .album-song-button span {
      line-height: 28px;
  }
-
 
 @media (max-width: 640px) and (min-width: 320px) {
     .album-view-details {
