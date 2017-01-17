@@ -1,5 +1,7 @@
 ## Bloc Frontend Project Starter
 
+This is tied to the BlocJams project also listed in this GitHub account. This is a refactor and continuing development from that project.
+
 A starter application for student projects in Bloc's [Frontend Web Development Course](https://www.bloc.io/frontend-development-bootcamp).
 
 ## Configuration
