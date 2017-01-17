@@ -1,7 +1,9 @@
  (function() {
-     function Fixtures() {
+     function Fixtures($rootScope) {
+       $rootScope.songPlays = [];
+       
          var Fixtures = {};
-            
+
             var albumTuxicity = {
                 title: 'Loung Lizzards',
                 artist: 'Richard Cheese',
@@ -16,7 +18,7 @@
                     { title: 'Relax', duration: '114', audioUrl: '/assets/music/Relax' }
                 ]
             };
-         
+
             var albumPicasso = {
                 title: 'The Colors',
                 artist: 'Pablo Picasso',
@@ -31,7 +33,7 @@
                     { title: 'Magenta', duration: '374.22', audioUrl: '/assets/music/magenta' }
                 ]
             };
- 
+
             var albumMarconi = {
                 title: 'The Telephone',
                 artist: 'Guglielmo Marconi',
@@ -50,20 +52,30 @@
          Fixtures.getAlbum = function() {
             return albumTuxicity;
          };
-         
+
+         Fixtures.eventAlbum= function(albumObj) {
+           $rootScope.songPlays.push(albumObj);
+           console.log($rootScope.songPlays);
+         };
+
+         Fixtures.eventPageLoad= function(pageObj) {
+           $rootScope.songPlays.push(pageObj);
+           console.log($rootScope.songPlays);
+         };
+
          Fixtures.getCollection = function(numberOfAlbums) {
             this.collection = [];
             for (var i = 0; i < numberOfAlbums; i++) {
-         
+
                 this.collection.push(angular.copy(albumTuxicity));
             }
             return this.collection;
          };
-         
+
          return Fixtures;
      }
- 
+
      angular
          .module('blocJams')
-         .factory('Fixtures', Fixtures);
+         .factory('Fixtures', ['$rootScope', Fixtures]);
  })();
