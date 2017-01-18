@@ -1,7 +1,8 @@
  (function() {
      function Fixtures($rootScope) {
        $rootScope.songPlays = [];
-       
+       var blocmetrics = {};
+
          var Fixtures = {};
 
             var albumTuxicity = {
@@ -52,6 +53,15 @@
          Fixtures.getAlbum = function() {
             return albumTuxicity;
          };
+
+         Fixtures.report = function(eventName){
+           var event = {event: { name: eventName }};
+           var request = new XMLHttpRequest();
+
+           request.open("POST", "http://localhost:4000/api/events", true);
+           request.setRequestHeader('Content-Type', 'application/json');
+           request.send(JSON.stringify(event));
+         }
 
          Fixtures.eventAlbum= function(albumObj) {
            $rootScope.songPlays.push(albumObj);
