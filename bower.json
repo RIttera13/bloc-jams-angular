@@ -1,0 +1,25 @@
+{
+  "name": "bloc-frontend-project-starter",
+  "description": "Starter project for the Bloc Frontend Web Development",
+  "main": "server.js",
+  "authors": [
+    "Bloc Inc"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/RIttera13/bloc-jams-angular",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-nvd3": "^1.0.9",
+    "angular": "^1.6.1",
+    "d3": "^4.4.2",
+    "nvd3": "^1.8.5",
+    "angularjs-nvd3-directives": "^0.0.7"
+  }
+}
