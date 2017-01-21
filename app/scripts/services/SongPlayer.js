@@ -94,8 +94,9 @@
           };
 
           SongPlayer.eventPlay= function(songObj) {
-            $rootScope.songPlays.push(songObj);
-            console.log($rootScope.songPlays)
+            songObj['playedAt'] = new Date();
+            $rootScope.events.push(songObj);
+            console.log($rootScope.events)
           };
           /**
           * @function (Method) SongPlayer.pause

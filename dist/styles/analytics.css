@@ -2,6 +2,12 @@ body.landing {
     background-color: rgb(58,23,63);
 }
 
+.chart-section {
+  background-color: lightgrey;
+  margin-left: 28%;
+  margin-right: 10%;
+}
+
 .hero-content {
     position: relative;
     min-height: 600px;
@@ -50,4 +56,9 @@ body.landing {
 .ion-iphone {
     color: rgb(233,50,117);
     font-size: 5rem;
+}
+
+.nvd3 .nv-legend-text {
+  font-weight: bolder;
+  font-size: 22px;
 }

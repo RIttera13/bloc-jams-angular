@@ -1,7 +1,9 @@
  (function() {
      function Fixtures($rootScope) {
-       $rootScope.songPlays = [];
-       
+       $rootScope.eventsSong = [];
+       $rootScope.eventsArtist = [];
+       $rootScope.eventsPage = [];
+
          var Fixtures = {};
 
             var albumTuxicity = {
@@ -51,16 +53,6 @@
 
          Fixtures.getAlbum = function() {
             return albumTuxicity;
-         };
-
-         Fixtures.eventAlbum= function(albumObj) {
-           $rootScope.songPlays.push(albumObj);
-           console.log($rootScope.songPlays);
-         };
-
-         Fixtures.eventPageLoad= function(pageObj) {
-           $rootScope.songPlays.push(pageObj);
-           console.log($rootScope.songPlays);
          };
 
          Fixtures.getCollection = function(numberOfAlbums) {
